@@ -3,6 +3,7 @@ import PyQt5.QtGui as qtg
 import random
 
 chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+[{]}|\;:',<.>/?`~"
+pwd = ""
 
 
 class MainWindow(qtw.QWidget):
@@ -11,7 +12,6 @@ class MainWindow(qtw.QWidget):
 
         def generate_password():
             """Function that generates a random password with the length base on what the user selects in the spin box, then displays it on the text box"""
-             pwd = ""
              password_len = my_spin.value()
              for x in range(0,password_len):
                  password_char = random.choice(chars)
