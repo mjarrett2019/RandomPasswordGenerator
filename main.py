@@ -3,7 +3,6 @@ import PyQt5.QtGui as qtg
 import random
 
 chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-_=+[{]}|\;:',<.>/?`~"
-pwd = ""
 
 
 class MainWindow(qtw.QWidget):
