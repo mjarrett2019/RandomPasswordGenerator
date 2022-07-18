@@ -44,7 +44,7 @@ class MainWindow(qtw.QWidget):
         self.layout().addWidget(my_pwd)
         # Button
         my_button = qtw.QPushButton("Generate New Password")
-        my_button.clicked.connect(generate_password())
+        my_button.clicked.connect(generate_password)
         self.layout().addWidget(my_button)
 
 
