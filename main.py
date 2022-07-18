@@ -11,12 +11,13 @@ class MainWindow(qtw.QWidget):
         super().__init__()
 
         def generate_password():
-            """Function that generates a random password with the length base on what the user selects in the spin box, then displays it on the text box"""
-             password_len = my_spin.value()
-             for x in range(0,password_len):
-                 password_char = random.choice(chars)
-                 pwd = pwd + password_char
+            pwd = ""
+            password_len = my_spin.value()
+            for x in range(0,password_len):
+                password_char = random.choice(chars)
+                pwd = pwd + password_char
             my_pwd.setText(pwd)
+
 
         # Title
         self.setWindowTitle("Random Password Generator")
