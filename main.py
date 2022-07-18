@@ -15,7 +15,6 @@ class MainWindow(qtw.QWidget):
             for x in range(0,password_len):
                 password_char = random.choice(chars)
                 pwd = pwd + password_char
-            return pwd
             my_pwd.setText(pwd)
 
 
