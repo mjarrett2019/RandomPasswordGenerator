@@ -15,6 +15,7 @@ class MainWindow(qtw.QWidget):
             for x in range(0,password_len):
                 password_char = random.choice(chars)
                 pwd = pwd + password_char
+            return pwd
             my_pwd.setText(pwd)
 
 
@@ -42,7 +43,8 @@ class MainWindow(qtw.QWidget):
         my_pwd.setText("Your Password Here")
         self.layout().addWidget(my_pwd)
         # Button
-        my_button = qtw.QPushButton("Generate New Password", clicked=generate_password())
+        my_button = qtw.QPushButton("Generate New Password")
+        my_button.clicked.connect(generate_password())
         self.layout().addWidget(my_button)
 
 
